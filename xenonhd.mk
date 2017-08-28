@@ -24,3 +24,10 @@ TARGET_SCREEN_HEIGHT := 960
 
 # Root options
 ROOT_METHOD=magisk
+
+# Stock build fingerprint
+BUILD_FINGERPRINT := "samsung/grandprimeve3gxx/grandprimeve3g:5.1.1/LMY48B/G531HDDU0APK2:user/release-keys"
+PRIVATE_BUILD_DESC := "grandprimeve3gxx-user 5.1.1 LMY48B G531HDDU0APK2 release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.build.fingerprint=$(BUILD_FINGERPRINT)
